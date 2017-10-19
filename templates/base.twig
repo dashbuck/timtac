@@ -6,29 +6,28 @@
 	</head>
 {% endblock %}
 
-	<body class="{{body_class}}" data-template="base.twig">
-		<header class="header" >
+	<body data-template="base.twig">
+		<header>
 			{% block header %}
-				<div class="wrapper">
-					<h1 class="hdr-logo" role="banner">
-						<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
+					<h1 role="banner">
+						<a href="{{site.url}}" rel="home">{{site.name}}</a>
 					</h1>
-					<nav id="nav-main" class="nav-main" role="navigation">
+					<nav id="nav-main" role="navigation">
 						{% include "menu.twig" with {'menu': menu.get_items} %}
 					</nav><!-- #nav -->
 				</div>
 			{% endblock %}
 		</header>
 
-		<section id="content" role="main" class="content-wrapper">
+		<section id="content" role="main">
 			{% if title %}<h1>{{title}}</h1>{% endif %}
-			<div class="wrapper {{sidebar_class}}">
+			<div>
 				{% block content %}
 					Sorry, no content
 				{% endblock %}
 			</div>
 			{% if sidebar %}
-				<aside class="layout-sidebar">
+				<aside>
 					{{sidebar}}
 				</aside>
 			{% endif %}
