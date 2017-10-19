@@ -1,10 +1,9 @@
 ## Team
 
-Your name or company
-http://yoursite.org
-@you_on_twitter
-
+Dash Buck
+http://emdashbuck.com
+@emdashbuck
 
 ## Site
 
-Software: Built with [Timber](http://upstatement.com/timber) by Upstatement
+Built with [Timber](http://upstatement.com/timber) by Upstatement and [Tachyons](http://tachyons.io) by Adam Morse.
